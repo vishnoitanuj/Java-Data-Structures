@@ -1,6 +1,8 @@
-package CodingNinja;
+package CNAssignment;
 
 import java.util.Scanner;
+
+import CodingNinja.Node;
 
 public class Search {
 

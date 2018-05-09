@@ -11,9 +11,11 @@ Sample Output 1 :
 
  * */
 
-package CodingNinja;
+package CNAssignment;
 
 import java.util.Scanner;
+
+import CodingNinja.Node;
 
 public class AppendLastNToFirst {
 
@@ -23,7 +25,7 @@ public class AppendLastNToFirst {
 		int data;
 		data = sc.nextInt();
 		while(data!=-1){
-			Node<Integer> newNode = new Node<>(data);
+			Node<Integer> newNode = new Node<Integer>(data);
 			if(head == null){
 				head = newNode;
 				tail = newNode;
