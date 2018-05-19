@@ -3,10 +3,13 @@ package Practise;
 public class FractionalKnapsack {
 	
 	public static void main(String[] args) {
-		int[] weights = {10,20,30};
-		int[] values = {60,100,120};
-		int maxWeight = 50;
-		System.out.println(knapsack(weights,values,maxWeight));
+		int i,j;
+//		int[] weights = {10,20,30};
+//		int[] values = {60,100,120};
+//		int maxWeight = 50;
+//		System.out.println(knapsack(weights,values,maxWeight));
+		for (i = 0; i < 4; i++)
+			System.out.println(i);
 	}
 	public static int knapsack(int[] weights, int[] values, int maxWeight) {
 		double[] ratio = new double[weights.length];
