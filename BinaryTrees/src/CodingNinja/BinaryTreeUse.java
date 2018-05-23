@@ -26,14 +26,14 @@ public class BinaryTreeUse {
 				toBePrinted += "L:" + current.left.data + ",";
 				q.enqueue(current.left);
 			}
-			else
-				toBePrinted += "L:-1";
+//			else
+//				toBePrinted += "L:-1";
 			if(current.right!=null) {
 				toBePrinted += "R:" + current.right.data;
 				q.enqueue(current.right);
 			}
-			else
-				toBePrinted += "R:-1";
+//			else
+//				toBePrinted += "R:-1";
 			System.out.println(toBePrinted);
 		}
 		

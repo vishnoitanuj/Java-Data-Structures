@@ -19,6 +19,7 @@ public class Graph {
 		DFS(edges);
 		System.out.println("BFS");
 		BFS(edges);
+		sc.close();
 	}
 
 	private static void DFS(int[][] edges) {
