@@ -8,7 +8,9 @@ public class TrieUse {
 		obj.add("andy");
 		obj.add("start");
 		System.out.println(obj.search("andy"));
-		System.out.println(obj.search("dy"));
+		obj.delete("andy");
+		System.out.println(obj.search("andy"));
+		System.out.println(obj.countWords());
 	}
 
 }
