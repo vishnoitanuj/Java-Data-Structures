@@ -2,7 +2,7 @@ package CodingNinja;
 
 import java.util.Scanner;
 
-public class InorderTraversal {
+public class OrderTraversal {
 
 	public static void main(String args[]) {
 		Scanner s = new Scanner(System.in);
@@ -16,6 +16,21 @@ public class InorderTraversal {
 		inorder(root.left);
 		System.out.println(root.data);
 		inorder(root.right);
+	}
+	
+	public static void preorder(BinaryTreeNode<Integer> root) {
+		if(root==null)
+			return;
+		System.out.println(root.data);
+		preorder(root.left);
+		preorder(root.right);
+	}
+	
+	public static void postorder(BinaryTreeNode<Integer> root) {
+		if(root==null)
+			return;
+		postorder(root.left);
+		postorder(root.right);
 	}
 
 	public static BinaryTreeNode<Integer> takeInput(Scanner s) {
