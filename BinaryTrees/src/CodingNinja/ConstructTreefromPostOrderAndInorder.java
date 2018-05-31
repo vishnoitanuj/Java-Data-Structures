@@ -7,7 +7,8 @@ public class ConstructTreefromPostOrderAndInorder {
 	}
 
 	private static BinaryTreeNode<Integer> getTreefromPostorderAndInoder(int[] post, int[] in, int postS, int postE, int inS,
-			int inE) {
+			int inE) 
+	{
 		
 		if(inS>inE) {
 			return null;
