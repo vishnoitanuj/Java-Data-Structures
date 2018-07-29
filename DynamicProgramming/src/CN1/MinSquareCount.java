@@ -22,7 +22,7 @@ public class MinSquareCount {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(minCount(5));
+		System.out.println(minCount(4));
 
 	}
 
