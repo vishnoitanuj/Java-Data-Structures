@@ -50,7 +50,7 @@ public class LargestCommonSubsequence {
 	public static int lcsDP(String s,String t) {
 		int m=s.length();
 		int n=t.length();
-		int a[][] = new int[m+1][m+1];
+		int a[][] = new int[m+1][n+1];
 		for(int i=0;i<=n;i++)
 			a[0][i] = 0;
 		for(int j=0;j<=m;j++)

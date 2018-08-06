@@ -39,8 +39,6 @@ public class DeletionLinkedList {
 	}
 
 	public static Node<Integer> deleteNode(Node<Integer> head,int pos){
-		if(pos==1)
-			return head.next;
 		Node<Integer> temp = head;
 		int i=1;
 		while(i<pos-1 && temp!=null){
@@ -49,6 +47,8 @@ public class DeletionLinkedList {
 		}
 		if(temp==null || head==null || pos<1 || temp.next==null)
 			return head;
+		if(pos==1)
+			return head.next;
 		else if(temp.next.next==null)
 			temp.next = null;
 		else
@@ -58,7 +58,7 @@ public class DeletionLinkedList {
 	public static void main(String[] args) {
 		Node<Integer> head = input();
 		//print(head);
-		head = deleteNode(head, 20);
+		head = deleteNode(head, 1);
 		print(head);
 
 	}

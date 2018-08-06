@@ -69,7 +69,7 @@ public class EditDistance {
 	public static void main(String[] args) {
 		String s = "adgei";
 		String t = "abeg";
-		System.out.println(editDistanceDP	(s, t));
+		System.out.println(editDistanceDP(s, t));
 		System.out.println(editDistanceM(s, t));
 		System.out.println(editDistance(s, t));
 	}
