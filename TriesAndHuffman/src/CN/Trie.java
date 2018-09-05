@@ -37,13 +37,7 @@ public class Trie {
 			root.childCount++;
 		}
 		add(child,word.substring(1));
-		
-		//We can only remove a child if it is non-terminating and does not have a child
-		if(!root.isTerminating && root.childCount==0) {
-			root.children[childIndex] = null;
-			child = null;
-			root.childCount--;
-		}
+			
 	}
 	
 	public void add(String word) {
